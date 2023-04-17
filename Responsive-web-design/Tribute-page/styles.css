@@ -1,0 +1,55 @@
+body {
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(218, 251, 251);
+    padding: 1em;
+}
+
+
+header>h1,
+header>h4 {
+    text-align: center;
+}
+
+
+figure {
+    background-color: rgb(238, 250, 250);
+    padding: 2em 2em 1em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: .5em;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: .5em;
+}
+
+
+#main {
+    background-color: rgb(238, 238, 238);
+}
+
+#tribute-data {
+    width: 80%;
+    margin: auto;
+    padding: 2em 2em 1em 2em;
+}
+
+#tribute-link-block>h3 {
+    text-align: center;
+    background-color: azure;
+    padding: 1em;
+    margin: 1em 0 0 0;
+}

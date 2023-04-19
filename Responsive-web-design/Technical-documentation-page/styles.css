@@ -1,22 +1,128 @@
-body {
+* {
+    scroll-behavior: smooth;
     box-sizing: border-box;
-    background-color: rgb(244, 238, 224);
+}
+
+body {
+    background-color: rgb(35, 49, 59);
     font-family: 'Roboto Slab', serif;
-    margin: 0;
-    padding: 0;
+    color: white;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    background-color: rgb(51, 71, 86);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+}
+
+button {
+    background-color: rgb(21, 93, 226);
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-cwhite {
+    color: white;
+}
+
+.info-box {
+    background-color: rgb(244, 244, 237);
+    border-left: 5px solid rgb(51, 236, 100);
+    padding: .5rem;
+    border-radius: 5px;
+    color: black;
+}
+
+.info-box>button {
+    background-color: rgb(51, 236, 100);
+    color: white;
+    border-radius: 5%;
+}
+
+.code-box {
+    background-color: rgba(22, 22, 22, 0.266);
+    border-left: 5px solid rgb(51, 236, 100);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: left;
+}
+
+.code-box>code {
+    background-color: rgba(0, 0, 0, 0.053);
+    color: white;
+    font-size: large;
+}
+
+.code-box>pre {
+    width: auto;
+    overflow-x: scroll;
+
+}
+
+.code-box>pre>code::-webkit-scrollbar {
+    width: auto;
 }
 
 
-header {
-    background-color: rgb(109, 93, 110);
-    color: white;
-    margin: 0;
-    position: fixed;
-    text-align: center;
-    left: 0;
-    top: 0;
-    padding: 1rem;
+.notify-box {
+    background-color: rgb(130, 245, 98);
+    border-radius: 5px;
+    color: black;
+}
 
+.px1 {
+    padding: .5rem 1rem;
+}
+
+.mx1 {
+    margin: 0 1rem;
+}
+
+figure {
+    max-width: 100%;
+    height: auto;
+}
+
+figure img {
+    max-width: 100%;
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+/* 
+.nav-header {
+    background-color: rgb(44, 57, 75);
+    color: white;
+    text-align: center;
+    overflow: auto !important;
+    height: 100%;
+    width: 25%;
+    margin: 0;
+    padding: 1rem 0;
+    position: fixed;
+}
+
+header::-webkit-scrollbar {
+    width: 5px;
 }
 
 header h1.logo,
@@ -25,17 +131,21 @@ header p.sub-heading {
 }
 
 nav ul {
-    padding: 0;
+    padding: 0 0 1rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 nav ul li {
     list-style: none;
-    line-height: 2.5rem;
-    padding: 1rem;
+    width: 100%;
     border-bottom: 2px solid rgb(79, 69, 87);
+    line-height: 1.5rem;
+    padding: 1rem 0
 }
 
 a {
     text-decoration: none;
     color: white;
-}
+} */

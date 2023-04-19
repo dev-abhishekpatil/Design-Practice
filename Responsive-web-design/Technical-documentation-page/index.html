@@ -13,24 +13,190 @@
     </head>
 
     <body>
-        <header>
-            <h1 class="logo">Javascript</h1>
-            <p class="sub-heading">Make-it-easy</p>
+        <!-- <header class="nav-header">
+            <h1 class="logo">React</h1>
+            <p class="sub-heading">Made-it-easy</p>
             <nav>
                 <ul>
-                    <li class="nav-item"><a href="" class="nav-link">Introduction</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">What should you know</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Javascript & Java</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Variables</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Declaring Variables</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Variable Scope</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Introduction</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Get Started</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React ES6</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Render Html</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React JSX</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Components</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Class</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Props</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Event</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React List</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Forms</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Router</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Memo</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React CSS Styling</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">React Scss Styling</a></li>
+
+
                 </ul>
             </nav>
-        </header>
+        </header> -->
 
         <main id="main-doc">
+            <section class="main-section" id="main-section-1">
+                <header>
+                    <h1 id="header">React Tutorial</h1>
+                    <div class="info-box" id="React_Tutorial">
+                        React is a JavaScript library for building user interfaces.
+                        <br>
+                        React is used to build single-page applications.
+                        <br>
+                        React allows us to create reusable UI components.
+                    </div>
+                </header>
+
+                <div class="main">
+                    <p>
+                    <h4>Learning by Examples</h4>
+                    </p>
+                    <figure class="code-box ">
+                        <pre>
+                            <code>
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Hello(props) {
+return <span>Hello World!</span>;
+}
+
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container);
+root.render(<Hello />);
+                            </code>
+                            
+                        </pre>
+                    </figure>
+                    <div class="details px1">
+                        <h2>Create React App</h2>
+                        To learn and test React, you should set up a React Environment on your computer.
+                        <p></p>
+                        This tutorial uses the create-react-app.
+                        <p></p>
+                        The create-react-app tool is an officially supported way to create React applications.
+                        <p></p>
+                        Node.js is required to use create-react-app.
+                        <p></p>
+                        Open your terminal in the directory you would like to create your application.
+                        <p></p>
+                        Run this command to create a React application named my-react-app:
+                        <p></p>
+                        <div class="code-box"><code>npx create-react-app my-react-app</code></div>
+                        <p>create-react-app will set up everything you need to run a React application.
+                        </p>
+                    </div>
+                    <div class="notify-box px1 mx1">
+                        <p>
+                            Note: If you've previously installed create-react-app globally,<br>
+                            it is recommended that you uninstall the package to ensure npx always uses the latest
+                            version of
+                            create-react-app. <br>
+                            To uninstall, run this command: npm uninstall -g create-react-app.
+                        </p>
+                    </div>
+                    <div class="px1">
+                        <h2>Run the React Application</h2>
+                        <p>
+                            Run this command to move to the my-react-app directory:
+                        </p>
+                        <div class="code-box"><code>cd my-react-app</code></div>
+                        <p>Run this command to execute the React application my-react-app</p>
+                        <div class="code-box"><code>npm start</code></div>
+                        <p>A new browser window will pop up with your newly created React App! If not, open your
+                            browser and type localhost:3000 in the address bar.</p>
+                        <figure>
+                            <img id="image" class="image"
+                                src="https://www.w3schools.com/react/screenshot_myfirstreact.png" alt="react-startup">
+                        </figure>
+                    </div>
+                </div>
+
+            </section>
+            <hr>
             <section class="main-section" id="">
-                <header></header>
+                <header>
+                    <h1 id="header">React Introduction</h1>
+                </header>
+                <div class="details mx1">
+                    <h4>What is React?</h4>
+                    <p>React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created
+                        by Facebook.</p>
+                    <p>
+                        React is a tool for building UI components.
+                    </p>
+                    <h2>How does React Work?</h2>
+                    <div class="info-box">React creates a VIRTUAL DOM in memory.
+                    </div>
+                    <p>
+                        Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where
+                        it does all the necessary manipulating, before making the changes in the browser DOM.
+                    </p>
+                    <div class="info-box">
+                        React only changes what needs to be changed!
+                    </div>
+                    <p>React finds out what changes have been made, and changes only what needs to be changed.
+                    </p>
+                    <p>
+                        You will learn the various aspects of how React does this in the rest of this tutorial.
+                    </p>
+                    <div class="notify-box px1">To use React in production, you need npm which is included with Node.js.
+                    </div>
+                    <p>To get an overview of what React is, you can write React code directly in HTML.
+                    </p>
+                    <p>
+                        But in order to use React in production, you need npm and Node.js installed.
+                    </p>
+                </div>
+                <figure class="code-box">
+                    <figcaption></figcaption>
+                    <pre>
+                        <code>
+                            
+                        </code>
+                    </pre>
+
+                </figure>
+
+            </section>
+
+            <section class="main-section" id="">
+                <header>
+
+                </header>
+                <p class="parts"></p>
+                <code class="code"></code>
+
+            </section>
+
+            <section class="main-section" id="">
+                <header>
+
+                </header>
+                <p class="parts"></p>
+                <code class="code"></code>
+
+            </section>
+
+            <section class="main-section" id="">
+                <header>
+
+                </header>
+                <p class="parts"></p>
+                <code class="code"></code>
+
+            </section>
+
+            <section class="main-section" id="">
+                <header>
+
+                </header>
                 <p class="parts"></p>
                 <code class="code"></code>
 

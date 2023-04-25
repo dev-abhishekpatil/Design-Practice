@@ -4,10 +4,43 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: rgb(35, 49, 59);
     font-family: 'Roboto Slab', serif;
     color: white;
     line-height: 1.5em;
+}
+
+
+#navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    text-align: left;
+    /* margin: 2rem 2rem 2rem 1rem; */
+
+}
+
+#navbar header {
+    padding: 1rem;
+    font-size: xx-large;
+    margin-top: 2rem;
+    padding-left: 3rem;
+}
+
+#navbar ul li a {
+    line-height: 2.5rem;
+    padding: .5rem;
+    margin: .2rem;
+    width: 100%;
+}
+
+#navbar ul li:hover {
+    background: rgba(0, 0, 0, 0.193);
+    border-radius: 5px;
 }
 
 a {
@@ -20,6 +53,8 @@ li {
 }
 
 main {
+    position: absolute;
+    left: 250px;
     background-color: rgb(51, 71, 86);
     color: white;
     padding: 1rem;
@@ -41,7 +76,7 @@ button {
 
 .info-box {
     background-color: rgb(244, 244, 237);
-    border-left: 5px solid rgb(51, 236, 100);
+    border-left: 5px solid rgba(37, 231, 47, 0.914);
     padding: .5rem;
     border-radius: 5px;
     color: black;
@@ -57,24 +92,20 @@ button {
     background-color: rgba(22, 22, 22, 0.266);
     border-left: 5px solid rgb(51, 236, 100);
     border-radius: 5px;
-    padding: 1rem;
     text-align: left;
+    overflow: auto;
 }
 
 .code-box>code {
     background-color: rgba(0, 0, 0, 0.053);
     color: white;
     font-size: large;
+    line-height: normal;
 }
 
-.code-box>pre {
-    width: auto;
-    overflow-x: scroll;
-
-}
-
-.code-box>pre>code::-webkit-scrollbar {
-    width: auto;
+.code-box>pre>code {
+    width: 80% auto;
+    font-size: x-large;
 }
 
 
@@ -88,13 +119,43 @@ button {
     padding: .5rem 1rem;
 }
 
+.py1 {
+    padding: 1rem .5rem
+}
+
 .mx1 {
     margin: 0 1rem;
+}
+
+.my1 {
+    margin: 1rem 0;
+}
+
+.success {
+    color: rgb(43, 242, 80) !important;
+    background-color: rgba(12, 228, 8, 0.364);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.danger {
+    color: rgb(242, 43, 43) !important;
+    background-color: rgba(228, 8, 52, 0.364);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.warning {
+    color: rgb(239, 242, 43) !important;
+    background-color: rgba(228, 228, 8, 0.364);
+    padding: 2px 4px;
+    border-radius: 3px;
 }
 
 figure {
     max-width: 100%;
     height: auto;
+
 }
 
 figure img {
@@ -108,44 +169,25 @@ hr {
     margin: 2rem 0;
 }
 
-/* 
-.nav-header {
-    background-color: rgb(44, 57, 75);
-    color: white;
-    text-align: center;
-    overflow: auto !important;
-    height: 100%;
-    width: 25%;
-    margin: 0;
-    padding: 1rem 0;
-    position: fixed;
-}
+@media(max-width:767px) {
 
-header::-webkit-scrollbar {
-    width: 5px;
-}
+    body {
+        display: block;
+    }
 
-header h1.logo,
-header p.sub-heading {
-    margin: 0;
-}
 
-nav ul {
-    padding: 0 0 1rem 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+    #navbar {
+        position: inherit;
+        display: block;
+        height: auto;
+    }
 
-nav ul li {
-    list-style: none;
-    width: 100%;
-    border-bottom: 2px solid rgb(79, 69, 87);
-    line-height: 1.5rem;
-    padding: 1rem 0
-}
+    main {
+        position: inherit;
+    }
 
-a {
-    text-decoration: none;
-    color: white;
-} */
+    .mx1 {
+        margin: 0;
+    }
+
+}

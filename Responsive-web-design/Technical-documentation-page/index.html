@@ -13,51 +13,36 @@
     </head>
 
     <body>
-        <!-- <header class="nav-header">
-            <h1 class="logo">React</h1>
-            <p class="sub-heading">Made-it-easy</p>
-            <nav>
-                <ul>
-                    <li class="nav-item"><a href="" class="nav-link">React Home</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Introduction</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Get Started</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React ES6</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Render Html</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React JSX</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Components</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Class</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Props</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Event</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React List</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Forms</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Router</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Memo</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React CSS Styling</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">React Scss Styling</a></li>
-
-
-                </ul>
-            </nav>
-        </header> -->
+        <nav class="navbar" id="navbar">
+            <header class="brand" id="brand">ReactJS</header>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#react_tutorial" class="nav-link">React Tutorial</a></li>
+                <li class="nav-item"><a href="#introduction" class="nav-link">Introduction</a></li>
+                <li class="nav-item"><a href="#react_ES6" class="nav-link">React ES6</a></li>
+                <li class="nav-item"><a href="#react_render_HTML" class="nav-link">React Render HTML</a></li>
+                <li class="nav-item"><a href="#react_JSX" class="nav-link">React JSX</a></li>
+            </ul>
+        </nav>
 
         <main id="main-doc">
-            <section class="main-section" id="main-section-1">
-                <header>
-                    <h1 id="header">React Tutorial</h1>
-                    <div class="info-box" id="React_Tutorial">
-                        React is a JavaScript library for building user interfaces.
-                        <br>
-                        React is used to build single-page applications.
-                        <br>
-                        React allows us to create reusable UI components.
-                    </div>
-                </header>
 
-                <div class="main">
+            <section class="main-section" id="react_tutorial">
+                <header>
+                    <h1>React Tutorial</h1>
+                </header>
+                <div class="info-box mx1">
+                    React is a JavaScript library for building user interfaces.
+                    <br>
+                    React is used to build single-page applications.
+                    <br>
+                    React allows us to create reusable UI components.
+                </div>
+
+                <div class="details mx1">
                     <p>
                     <h4>Learning by Examples</h4>
                     </p>
-                    <figure class="code-box ">
+                    <figure class="code-box px1">
                         <pre>
                             <code>
 import React from 'react';
@@ -74,7 +59,7 @@ root.render(<Hello />);
                             
                         </pre>
                     </figure>
-                    <div class="details px1">
+                    <div class="details px1 ">
                         <h2>Create React App</h2>
                         To learn and test React, you should set up a React Environment on your computer.
                         <p></p>
@@ -88,7 +73,7 @@ root.render(<Hello />);
                         <p></p>
                         Run this command to create a React application named my-react-app:
                         <p></p>
-                        <div class="code-box"><code>npx create-react-app my-react-app</code></div>
+                        <div class="code-box px1"><code>npx create-react-app my-react-app</code></div>
                         <p>create-react-app will set up everything you need to run a React application.
                         </p>
                     </div>
@@ -106,9 +91,9 @@ root.render(<Hello />);
                         <p>
                             Run this command to move to the my-react-app directory:
                         </p>
-                        <div class="code-box"><code>cd my-react-app</code></div>
+                        <div class="code-box px1"><code>cd my-react-app</code></div>
                         <p>Run this command to execute the React application my-react-app</p>
-                        <div class="code-box"><code>npm start</code></div>
+                        <div class="code-box px1"><code>npm start</code></div>
                         <p>A new browser window will pop up with your newly created React App! If not, open your
                             browser and type localhost:3000 in the address bar.</p>
                         <figure>
@@ -120,9 +105,10 @@ root.render(<Hello />);
 
             </section>
             <hr>
-            <section class="main-section" id="">
+
+            <section class="main-section" id="introduction">
                 <header>
-                    <h1 id="header">React Introduction</h1>
+                    <h1>Introduction</h1>
                 </header>
                 <div class="details mx1">
                     <h4>What is React?</h4>
@@ -154,52 +140,301 @@ root.render(<Hello />);
                         But in order to use React in production, you need npm and Node.js installed.
                     </p>
                 </div>
-                <figure class="code-box">
-                    <figcaption></figcaption>
-                    <pre>
-                        <code>
-                            
+                <h2>Setting up a React Environment</h2>
+                <div class="details mx1">
+                    <p class="">
+                        If you have npx and Node.js installed, you can create a React application by using
+                        create-react-app.
+                    </p>
+                    <div class="info-box">
+                        If you've previously installed create-react-app globally, it is recommended that you uninstall
+                        the package to ensure npx always uses the latest version of create-react-app.
+                        <br>
+                        To uninstall, run this command: npm uninstall -g create-react-app.
+                    </div>
+                    <p>Run this command to create a React application named my-react-app:
+                    </p>
+                    <div class="code-box px1">
+                        <code>npx create-react-app my-react-app
                         </code>
-                    </pre>
+                    </div>
+                    <p>The create-react-app will set up everything you need to run a React application.
+                    </p>
+                    <hr>
+                    <h3>Run the React Application</h3>
+                    <p>Now you are ready to run your first real React application!
+                    </p>
+                    <p>Run this command to move to the my-react-app directory:
+                    </p>
+                    <div class="code-box px1"><code>
+                        cd my-react-app
+                    </code></div>
+                    <p>Run this command to run the React application my-react-app:
+                    </p>
+                    <div class="code-box px1"><code>
+                        npm start
+                    </code></div>
+                    <div class="notify-box px1 my1">
+                        Notice that the changes are visible immediately after you save the file, you do not have to
+                        reload the browser!
+                    </div>
+                </div>
+            </section>
+            <hr>
 
-                </figure>
+            <section class="main-section" id="react_ES6">
+                <header>
+                    <h1>React ES6</h1>
+                </header>
+                <div class="details mx1">
+                    <h4 class="">What is ES6?</h4>
+                    <h5>ES6 stands for ECMAScript 6.</h5>
+                    <p>ECMAScript was created to standardize JavaScript, and ES6 is the 6th version of ECMAScript, it
+                        was
+                        published in 2015, and is also known as ECMAScript 2015.
+                    </p>
+                    <hr>
+                    <h4>Why Should I Learn ES6?
+                    </h4>
+                    <p>React uses ES6, and you should be familiar with some of the new features like:
+                    </p>
+                    <ul>
+                        <li class="list-item"><a href="#" target="_blank">Classes</a></li>
+                        <li class="list-item"><a href="#" target="_blank">Arrow Functions</a></li>
+                        <li class="list-item"><a href="#" target="_blank">Variables</a></li>
+                        <li class="list-item"><a href="#" target="_blank">Array Methods</a></li>
+                        <li class="list-item"><a href="#" target="_blank">Destructuring</a></li>
+                        <li class="list-item"><a href="#" target="_blank">Modules</a></li>
+                        <li class="list-item"><a href="#" target="_blank">Ternary Operators</a></li>
+                        <li class="list-item"><a href="#" target="_blank">Spread Operators</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <h2>Classes</h2>
+                <div class="details mx1">
+                    <p class="">ES6 introduced classes. </p>
+                    <p>
+                        A class is a type of function, but instead of using the keyword function to initiate it, we use
+                        the keyword class, and the properties are assigned inside a <span
+                            class="danger">constructor()</span> method.
+                    </p>
+                    <div class="mx1">
+                        <h4>Example</h4>
+                        <p>A simple class constructor: </p>
+                        <div class="code-box px1">
+                            <pre class="">
+                            <code class="">
+class Car {
+    constructor(name) {
+        this.brand = name;
+    }
+}
+
+const mycar = new Car("Ford");
+
+document.write(mycar.brand);
+                            </code>
+                            </pre>
+                        </div>
+                        <div class="info-box my1"> <strong> Note:</strong> The constructor function is called
+                            automatically
+                            when
+                            the object is initialized.
+                        </div>
+                    </div>
+                    <h4>Class Inheritance</h4>
+                    <p><strong>Example</strong></p>
+                    <p>Create a class named "Model" which will inherit the methods from the "Car" class:
+                    </p>
+                    <div class="details">
+                        <div class="code-box px1">
+                            <pre>
+                                <code>
+class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+
+  present() {
+    return 'I have a ' + this.brand;
+  }
+}
+
+class Model extends Car {
+  constructor(name, mod) {
+    super(name);
+    this.model = mod;
+  }  
+  show() {
+      return this.present() + ', it is a ' + this.model
+  }
+}
+const mycar = new Model("Ford", "Mustang");
+mycar.show();
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
 
             </section>
+            <hr>
 
-            <section class="main-section" id="">
+            <section class="main-section" id="react_render_HTML">
                 <header>
-
+                    <h1>React Render HTML</h1>
                 </header>
-                <p class="parts"></p>
-                <code class="code"></code>
+                <div class="details mx1">
+                    <p>
+                        React's goal is in many ways to render HTML in a web page.
+                    </p>
+                    <p>
+                        React renders HTML to the web page by using a function called <span
+                            class="danger">createRoot()</span> and its method
+                        <span class="danger">render()</span> .
+                    </p>
+                    <h4>
+                        The creteRoot Function
+                    </h4>
+                    <ul>
+                        <li class="lists">The createRoot() function takes one argument, an HTML element. </li>
+                        <li class="lists">The purpose of the function is to define the HTML element where a React
+                            component should be displayed. </li>
+                    </ul>
+                    <h4>
+                        The render Method
+                    </h4>
+                    <ul>
+                        <li class="lists">The render() method is then called to define the React component that should
+                            be rendered.
+                        </li>
+                        <li class="lists">But render where?
+                        </li>
+                        <li class="lists">There is another folder in the root directory of your React project, named
+                            "public". In this folder, there is an index.html file.
+                        </li>
+                        <li class="lists">You'll notice a single <div> in the body of this file. This is where our React
+                                application will be rendered.
+                        </li>
+                    </ul>
+                    <div class="code-box px1">
+                        <pre><code>
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
+    root.render(<p>Hello</p>);
+                        </code></pre>
+                    </div>
+                    <div class="notify-box px1 my1">
+                        Note that the element id does not have to be called "root", but this is the standard convention.
+                    </div>
+
+                    <div class="code-box px1">
+                        <pre><code>
+    import React from 'react';
+    import ReactDOM from 'react-dom/client';
+    
+    const container = document.getElementById('sandy');
+    const root = ReactDOM.createRoot(container);
+    root.render( <p>Hallo</p> );
+    
+    /*
+    For this example to work on your project,
+    you must have a element with
+    id="sandy" on your "index.html" page.
+    */
+                        </code></pre>
+                    </div>
+                </div>
 
             </section>
+            <hr>
 
-            <section class="main-section" id="">
+            <section class="main-section" id="react_JSX">
                 <header>
-
+                    <h1>React JSX</h1>
                 </header>
-                <p class="parts"></p>
-                <code class="code"></code>
+                <h4 class="">What is JSX?
+                </h4>
+                <ul>
+                    <li class="lists">JSX stands for JavaScript XML. </li>
+                    <li class="lists">JSX allows us to write HTML in React. </li>
+                    <li class="lists">JSX makes it easier to write and add HTML in React. </li>
+                </ul>
+                <h4>Coding JSX
+                </h4>
+                <ul>
+                    <li class="lists">JSX allows us to write HTML elements in JavaScript and place them in the DOM
+                        without any createElement() and/or appendChild() methods.</li>
+                    <li class="lists">
+                        JSX converts HTML tags into react elements.
+                    </li>
+                </ul>
+                <div class="details mx1">
+                    <div class="info-box">
+                        You are not required to use JSX, but JSX makes it easier to write React applications.
+                    </div>
+                </div>
+                <p>
+                    Here are two examples. The first uses JSX and the second does not:
+                </p>
+                <p>
+                    <strong>Example 1</strong>
+                </p>
+                <div class="code-box px1 mx1">
+                    <pre><code>
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-            </section>
+const myElement = <h1>I Love JSX!</h1>;
 
-            <section class="main-section" id="">
-                <header>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+                    </code></pre>
+                </div>
+                <p>
+                    <strong>Example 2</strong>
+                </p>
+                <div class="code-box mx1 px1">
+                    <pre><code>
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-                </header>
-                <p class="parts"></p>
-                <code class="code"></code>
+const myElement = React.createElement('h1', {}, 'I do not use JSX!');
 
-            </section>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement)
+                    </code></pre>
+                </div>
+                <ul>
+                    <li class="lists">As you can see in the first example, JSX allows us to write HTML directly within
+                        the JavaScript code.
+                    </li>
+                    <li class="lists">JSX is an extension of the JavaScript language based on ES6, and is translated
+                        into regular JavaScript at runtime. </li>
+                </ul>
+                <h4>
+                    Expressions in JSX </h4>
 
-            <section class="main-section" id="">
-                <header>
+                <ul>
+                    <li class="lists"> With JSX you can write expressions inside curly braces { }.</li>
+                    <li class="lists">The expression can be a React variable, or property, or any other valid JavaScript
+                        expression. JSX will execute the expression and return the result:</li>
+                </ul>
+                <p>Execute the Expression <span class="danger">5 + 5</span></p>
+                <div class="code-box mx1 px1">
+                    <pre><code>
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-                </header>
-                <p class="parts"></p>
-                <code class="code"></code>
+const myElement = <h1>React is {5 + 5} times better with JSX</h1>;
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+                    </code></pre>
+                </div>
             </section>
 
         </main>
